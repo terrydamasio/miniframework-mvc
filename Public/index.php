@@ -1,4 +1,5 @@
 <?php 
+    require_once "../vendor/autoload.php";
 
-    echo 'olá';
+    $route = new \App\Route;
 
