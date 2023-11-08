@@ -2,9 +2,8 @@
 <hr>
 
 <?php 
-
-    foreach ($this->view->dados as $key => $value) {
-        echo $value . '<br>'; 
+    foreach ($this->view->dados as $key => $produto) {
+        echo $produto['id'] . ' - ' . $produto['descricao'] . ' - ' . $produto['preco'];
     }
     echo "Opa, chegamos na Action index. Essa mensagem é exclusiva.";
 
