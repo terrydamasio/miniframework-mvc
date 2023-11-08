@@ -1,14 +1,19 @@
 <?php
     namespace App\Controllers;
-
-    class IndexController {
+    use MF\Controller\Action;
+    
+    class IndexController extends Action {
         
         public function index() {
-            echo "Opa, chegamos na Action index. Essa mensagem é exclusiva.";
+            $this->view->dados = ["Sofá", "Cadeira" , "Mesa"];
+            $this->render('index');
         }
 
         public function sobreNos() {
-            echo "Action sobrenos";
+            $this->view->dados = ["Terry", "Kerry", "Joao"];
+            $this->render('sobrenos');
         }
+
+       
 
     }
