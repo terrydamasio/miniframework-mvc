@@ -1,12 +1,11 @@
 <?php
     namespace App;
-    
     class Connection {
 
         private $host = 'localhost';
         private $dbname = 'mvc';
         private $user = 'root';
-        private $pass = 'root';
+        private $pass = '#Terrydamasio2021';
 
         public function getDb() {
             try {
